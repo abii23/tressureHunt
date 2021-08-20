@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hint 2</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+ 
+    <script>
+        function compare(){
+            var x = document.getElementById("demo").value;
+        
+        if (typeof jQuery == 'undefined') {
+            document.write(unescape("%3Cscript src='/js/jquery-3.2.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+        
+      var value=x.toString();
+       //give the correct answer in var check1="".here answer is teacher
+       var check1="teacher"
+       var check=check1.toString();
+    
+       if (value==check)
+       {
+        window.location.href = "hint3.html";
+       }
+       else{
+       alert("incorrect answer");
+       }
+    }
+       
+    </script>
+</head>
+<body>
+    <div col-md-6 style="text-align: center ;">
+        <div class=" p-3 mb-2 bg-secondary text-white">
+            <h1>Hint 2</h1>
+        </div>
+    <div col-md-6 > 
+        <img src="hint2.jpg" class="img-fluid" alt="Responsive image">
+    </div> 
+
+<div class="input-group mb-6 p-5">
+    <div class="input-group-prepend">
+    
+    </div>
+    <input type="text" id="demo" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" style="text-align: center;" placeholder="Enter  your answer here">
+  </div>
+  <div style="text-align: center;">
+    <button type="submit" class="btn btn-primary" onclick="compare()">Submit</button>
+  </div>
+
+    
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+</body>
+</html>
